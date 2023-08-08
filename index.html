@@ -14,22 +14,29 @@
     <title>Umut Developer</title>
   </head>
   <body>
+    <div class="up">
+      <a href="#home"
+        ><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i
+      ></a>
+    </div>
+    <header>
+      <nav class="header">
+        <div class="header-logo">
+          <img width="100" src="assets/LOGO.png" alt="" />
+        </div>
+        <div class="header-content">
+          <ul class="header-list">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#about">Hakkında</a></li>
+            <li><a href="#portfolio">Portfolyo</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Home Section-->
     <section id="home">
-      <header>
-        <nav class="header">
-          <div class="header-logo">
-            <img width="100" src="assets/LOGO.png" alt="" />
-          </div>
-          <div class="header-content">
-            <ul class="header-list">
-              <li><a href="#home">Anasayfa</a></li>
-              <li><a href="#about">Hakkında</a></li>
-              <li><a href="#">Portfolyo</a></li>
-              <li><a href="#">İletişim</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
       <main>
         <div class="home">
           <div class="home-picture">
@@ -43,6 +50,7 @@
         </div>
       </main>
     </section>
+     <!--About Section-->
     <section id="about">
       <div class="about">
         <div class="about-picture">
@@ -72,6 +80,7 @@
         </div>
       </div>
     </section>
+    <!--Experience Section-->
     <section id="experience">
       <div class="experience">
         <div class="experience-content">
@@ -108,5 +117,51 @@
         </div>
       </div>
     </section>
+    <!--Portfolio Section-->
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="portfolio-box">
+          <img width="400" src="assets/LOGO.png" alt="">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit.</p>
+          <button>Projeyi Gör</button>
+        </div>
+        <div class="portfolio-box">
+          <img width="400" src="assets/LOGO.png" alt="">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit.</p>
+          <button>Projeyi Gör</button>
+        </div>
+        <div class="portfolio-box">
+          <img width="400" src="assets/LOGO.png" alt="">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit.</p>
+          <button>Projeyi Gör</button>
+        </div>
+        <div class="portfolio-box">
+          <img width="400" src="assets/LOGO.png" alt="">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit.</p>
+          <button>Projeyi Gör</button>
+        </div>
+      </div>
+    </section>
+    <section id="Education" class="education">
+      <div class="education-container">
+        <h1 style="display: flex; justify-content: center; margin: 50px 0 ;">Eğitimler</h1>
+        <div class="school-education">
+          <h4>2022-2024</h4>
+          <h3>Fırat Üniversitesi</h3>
+          <p>Bilgisayar Programcılığı</p>
+        </div>
+        <hr size="5" width="100%">
+        <div class="course-education">
+          <h4>2023</h4>
+          <h3>Bilge Adam Teknolojileri</h3>
+          <p>FrontEnd Developer Kursu</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
