@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/LOGO.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,11 +27,16 @@
         </div>
         <div class="header-content">
           <ul class="header-list">
-            <li><a href="#home">Anasayfa</a></li>
-            <li><a href="#about">Hakkında</a></li>
-            <li><a href="#portfolio">Portfolyo</a></li>
-            <li><a href="#">İletişim</a></li>
+            <li><a class="header-link" href="#home">Anasayfa</a></li>
+            <li><a class="header-link" href="#about">Hakkında</a></li>
+            <li><a class="header-link" href="#portfolio">Portfolyo</a></li>
+            <li><a class="header-link" href="#contact">İletişim</a></li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </div>
       </nav>
     </header>
@@ -50,7 +56,7 @@
         </div>
       </main>
     </section>
-     <!--About Section-->
+    <!--About Section-->
     <section id="about">
       <div class="about">
         <div class="about-picture">
@@ -121,40 +127,43 @@
     <section id="portfolio">
       <div class="portfolio">
         <div class="portfolio-box">
-          <img width="400" src="assets/LOGO.png" alt="">
+          <img width="400" src="assets/LOGO.png" alt="" />
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit.</p>
           <button>Projeyi Gör</button>
         </div>
         <div class="portfolio-box">
-          <img width="400" src="assets/LOGO.png" alt="">
+          <img width="400" src="assets/LOGO.png" alt="" />
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit.</p>
           <button>Projeyi Gör</button>
         </div>
         <div class="portfolio-box">
-          <img width="400" src="assets/LOGO.png" alt="">
+          <img width="400" src="assets/LOGO.png" alt="" />
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit.</p>
           <button>Projeyi Gör</button>
         </div>
         <div class="portfolio-box">
-          <img width="400" src="assets/LOGO.png" alt="">
+          <img width="400" src="assets/LOGO.png" alt="" />
           <h3>Title</h3>
           <p>Lorem ipsum dolor sit.</p>
           <button>Projeyi Gör</button>
         </div>
       </div>
     </section>
+    <!--Education Section-->
     <section id="Education" class="education">
       <div class="education-container">
-        <h1 style="display: flex; justify-content: center; margin: 50px 0 ;">Eğitimler</h1>
+        <h1 style="display: flex; justify-content: center; margin: 50px 0">
+          Eğitimler
+        </h1>
         <div class="school-education">
           <h4>2022-2024</h4>
           <h3>Fırat Üniversitesi</h3>
           <p>Bilgisayar Programcılığı</p>
         </div>
-        <hr size="5" width="100%">
+        <hr size="5" width="100%" />
         <div class="course-education">
           <h4>2023</h4>
           <h3>Bilge Adam Teknolojileri</h3>
@@ -162,6 +171,60 @@
         </div>
       </div>
     </section>
+    <!--Contact Start-->
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-title">
+          <h1>İletişim</h1>
+          <hr />
+        </div>
+        <div class="contact-container">
+          <div class="contact-content">
+            <div class="e-mail">
+              <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+              <span>utumer6@gmail.com</span>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+              <span>Eskişehir,Türkiye</span>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone-flip" style="color: #ffffff"></i>
+              <span>+90 534 591 84 76</span>
+            </div>
+          </div>
+          <div class="contact-form">
+            <input type="text" value="İsim Soyisim" />
+            <input type="text" value="E-Posta" />
+            <input type="text" value="Konu" />
+            <textarea
+              placeholder="Mesaj"
+              name=""
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button>Gönder</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <a href="https://www.instagram.com/umutdvlpr/" target="_blank"
+          ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="fa-brands fa-github" style="color: #ffffff"></i
+        ></a>
+      </div>
+      <div class="footer-text">
+        <p>Umut Can Tümer, 2023 <i class="fa-regular fa-copyright" style="color: #ffffff;"></i> Tüm Hakları Saklıdır.</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
