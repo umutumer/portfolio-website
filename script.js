@@ -20,9 +20,25 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function () {
         const distance = window.scrollY;
         if (distance > 300) {
-            upBtn.classList.add("show");
+            upBtn.classList.add("showup");
         } else {
-            upBtn.classList.remove("show");
+            upBtn.classList.remove("showup");
         }
     });
 });
+
+/////////////////////////////
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }else{
+            entry.target.classList.remove("show");
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el)=> observer.observe(el));
